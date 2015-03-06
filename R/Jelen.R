@@ -6,3 +6,9 @@ getMatrix <- function() {
   row.names(result) <- c("mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag", "søndag")
   return(result)
 } 
+
+# http experiment
+fetchJson <- function() {
+  response <-jsonlite::fromJSON("http://citibikenyc.com/stations/json")
+  return(response)
+}

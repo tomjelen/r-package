@@ -1,1 +1,1 @@
-exportPattern(getMatrix,fetchJson)
+exportPattern(getMatrix,fetchJson,getTimeSeries)

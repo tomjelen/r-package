@@ -1,6 +1,8 @@
-createRandomData <- function(seed) c(72*seed,87*seed,56*seed,54*seed)
+eur <- c(7.5, 7.4, 9, 8, 7.3, 7.3, 7.3)
+clicks <- c(1000, 200, 300, 500, 800, 5000, 4000)
 
-randomDataA <- createRandomData(1)
-randomDataB <- createRandomData(2)
-
-getMatrix <- function() data.frame(randomDataA, randomDataB)
+getMatrix <- function() {
+  result <- data.frame(eur, clicks)
+  row.names(result) <- c("mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag", "søndag")
+  return(result)
+} 
